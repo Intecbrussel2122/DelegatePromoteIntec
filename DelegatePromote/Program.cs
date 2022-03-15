@@ -21,7 +21,7 @@ namespace DelegatePromote
             {
                 if (promoteDelegate(employee))
                 {
-                    Console.WriteLine($"Employee {employee.Name} Promoted ");
+                    Console.WriteLine($"Employee {employee.Name} promoted ");
                 }
             }
         }
@@ -63,6 +63,7 @@ namespace DelegatePromote
             Employee.PromoteEmployee(employees, x => x.Salary < 3000.00);
             Console.WriteLine("");
             Employee.PromoteEmployee(employees, x => x.YearExperience > 4);
+
 
             Console.Read();
         }
